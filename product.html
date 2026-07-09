@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Abokichi</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <div class="currency-selector">
+        <span>USD</span>
+        <img src="assets/down_arrow.svg" alt="Dropdown Arrow" class="icon-down">
+      </div>
+      <a href="#stores" class="stores-link">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <span>Stores</span>
+      </a>
+    </div>
+    <div class="top-bar-right">
+      <a href="#login" class="login-link">Login / Register</a>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="./index.html" class="logo">
+        <img src="//www.abokichi.com/cdn/shop/files/ABOKICHI_logo_landscape.png?v=1614354071" alt="ABOKICHI Logo" class="logo-img">
+      </a>
+      <nav class="nav-menu">
+        <ul>
+          <li class="dropdown">
+            <a href="listing.html" class="dropdown-trigger">
+              Shop 
+              <img src="assets/down_arrow.svg" alt="Dropdown Arrow" class="icon-down">
+            </a>
+            <div class="dropdown-content">
+              <a href="listing.html">All Products</a>
+            </div>
+          </li>
+          <li><a href="index.html#story">Our story</a></li>
+          <li><a href="index.html#recipes">Recipes</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-utilities">
+        <button class="util-btn" id="search-btn" aria-label="Search"><img src="assets/search.svg" alt="Search icon"></button>
+        <a href="#wishlist" class="util-btn" aria-label="Wishlist"><img src="assets/wishlist.svg" alt="Wishlist icon"></a>
+        <a href="#cart" class="util-btn cart-toggle" aria-label="Shopping Bag">
+          <img src="assets/add_to_cart.svg" alt="Cart icon">
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Detail Section -->
+  <main class="pdp-main-section">
+    <div class="container pdp-breadcrumb">
+      <a href="listing.html">Shop</a> &gt; <span id="pdp-crumb">OKAZU Lovers Set (230ml/12 jars)</span>
+    </div>
+
+    <div class="container pdp-grid">
+      <!-- Left: Image Gallery -->
+      <div class="pdp-gallery">
+        <div class="main-image-box">
+          <img id="pdp-main-img" src="https://www.abokichi.com/cdn/shop/files/OKAZU_Spicy_Chili_12_Pack_8351e171-99f4-47d9-ad76-a57396cff59c.png" alt="Product Image">
+        </div>
+        <div class="thumbnail-slider">
+          <button class="thumb-nav">⟨</button>
+          <div class="thumbnails">
+            <div class="thumb-box active"><img id="pdp-thumb-1" src="https://www.abokichi.com/cdn/shop/files/OKAZU_Spicy_Chili_12_Pack_8351e171-99f4-47d9-ad76-a57396cff59c.png" alt="Thumb"></div>
+            <div class="thumb-box"><img src="https://www.abokichi.com/cdn/shop/files/20260409_Silo_OKAZU_Chili_front_2.png?v=1780569253" alt="Thumb"></div>
+            <div class="thumb-box"><img src="https://www.abokichi.com/cdn/shop/files/OKAZU_Spicy_Chili_12_Pack_8351e171-99f4-47d9-ad76-a57396cff59c.png" alt="Thumb"></div>
+          </div>
+          <button class="thumb-nav">⟩</button>
+        </div>
+      </div>
+
+      <!-- Right: Product Info -->
+      <div class="pdp-info">
+        <h1 id="pdp-title" class="pdp-title">OKAZU Lovers Set (230ml/12 jars)</h1>
+        
+        <div class="pdp-pricing">
+          <span id="pdp-price" class="current-price">$135.00</span>
+          <span id="pdp-old-price" class="old-price">$167.88</span>
+        </div>
+
+        <div class="pdp-rating">
+          <div class="stars">★★★★★</div>
+          <span class="reviews" id="pdp-reviews">32 Reviews</span>
+        </div>
+
+        <p class="pdp-short-desc">
+          Your new cooking BFF! You can add this to virtually everything. Try it on rice, on meat or tofu, in your burger, ramen and pretty much anything.
+        </p>
+
+        <div class="pdp-actions">
+          <button class="pdp-btn btn-add-cart">ADD TO CART</button>
+          <button class="pdp-btn btn-buy-now">Buy Now</button>
+        </div>
+
+        <button class="pdp-wishlist-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          WISHLIST
+        </button>
+
+        <div class="pdp-share">
+          <span class="share-label">SHARE:</span>
+          <a href="#"><img src="assets/fb_icon.svg" alt="FB" style="filter: invert(0.2);"></a>
+          <a href="#"><img src="assets/twitter.svg" alt="TW" style="filter: invert(0.2);"></a>
+          <a href="#"><img src="assets/insta.svg" alt="PI" style="filter: invert(0.2);"></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Product Tabs Section -->
+  <section class="pdp-tabs-section">
+    <div class="container">
+      <ul class="pdp-tabs-nav">
+        <li class="active">DESCRIPTION</li>
+        <li>REVIEWS</li>
+        <li>VIDEOS</li>
+        <li>COMMENTS</li>
+      </ul>
+      <div class="pdp-tab-content">
+        <p>Your new cooking BFF! You can add this to virtually everything. Try it on rice, on meat or tofu, in your burger, ramen and pretty much anything. These award winning products will have your taste buds lingering for more...and potentially create an addiction.</p>
+        <p>Chili OKAZU is an umami-rich chili, miso, and sesame oil based condiment often eaten with rice in Japan, which can also be used to top chicken, burgers, fish, eggs, potatoes, and more. Use it as a marinade or as an ingredient in your own homemade salad dressing, this condiment is versatile and we encourage you to experiment.</p>
+        <p>OKAZU gained an initial following at farmers' markets in Toronto and has been featured in The Toronto Star, The National Post, Toronto Life, FoodiePages and a winner of the Foodie Pick Awards.</p>
+        <p>HEAT LEVEL: MILD-MEDIUM</p>
+        <p>INGREDIENTS: SUNFLOWER OIL, SESAME OIL, GARLIC, MISO PASTE (ORGANIC SOYBEANS, RICE, SALT), TAMARI SOY SAUCE (NON-GMO SOYBEANS, SALT, SUGAR), SUGAR, CHILI POWDER, WHITE SESAME SEEDS.<br>
+        CHILI & SPICY OKAZU CONTAINS: SESAME, SOYBEANS. MAY CONTAIN: MUSTARD.</p>
+        <p>CURRY OKAZU CONTAINS: SESAME, SOYBEANS, MUSTARD.</p>
+        <p>INGREDIENTS:<br>
+        PRODUCT SEPARATION IS NORMAL. REFRIGERATE AFTER OPENING</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-column">
+        <h3 class="footer-heading">LINKS</h3>
+        <ul class="footer-links">
+          <li><a href="index.html#about">About us</a></li>
+          <li><a href="index.html#contact">Contact us</a></li>
+          <li><a href="index.html#service">Customer Service</a></li>
+          <li><a href="index.html#faqs">FAQs</a></li>
+          <li><a href="index.html#sitemap">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3 class="footer-heading">INFORMATION</h3>
+        <ul class="footer-links">
+          <li><a href="index.html#terms">Terms of Service</a></li>
+          <li><a href="index.html#refund">Refund policy</a></li>
+          <li><a href="index.html#press">Press</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column payment-column">
+        <div class="payment-icons">
+          <!-- Visa -->
+          <svg class="payment-icon-svg" viewBox="0 8 24 8" width="60" height="20">
+            <path d="M9.112 8.262L5.97 15.758H3.92L2.374 9.775c-.094-.368-.175-.503-.461-.658C1.447 8.864.677 8.627 0 8.479l.046-.217h3.3a.904.904 0 01.894.764l.817 4.338 2.018-5.102zm8.033 5.049c.008-1.979-2.736-2.088-2.717-2.972.006-.269.262-.555.822-.628a3.66 3.66 0 011.913.336l.34-1.59a5.207 5.207 0 00-1.814-.333c-1.917 0-3.266 1.02-3.278 2.479-.012 1.079.963 1.68 1.698 2.04.756.367 1.01.603 1.006.931-.005.504-.602.725-1.16.734-.975.015-1.54-.263-1.992-.473l-.351 1.642c.453.208 1.289.39 2.156.398 2.037 0 3.37-1.006 3.377-2.564m5.061 2.447H24l-1.565-7.496h-1.656a.883.883 0 00-.826.55l-2.909 6.946h2.036l.405-1.12h2.488zm-2.163-2.656l1.02-2.815.588 2.815zm-8.16-4.84l-1.603 7.496H8.34l1.605-7.496z" fill="#1a1f71"/>
+          </svg>
+          <!-- Mastercard -->
+          <svg class="payment-icon-svg" viewBox="0 0 42 30" width="48" height="34">
+            <circle cx="15" cy="11" r="9" fill="#eb001b"/>
+            <circle cx="27" cy="11" r="9" fill="#ff5f00" fill-opacity="0.9"/>
+            <text x="21" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="6.5" fill="#2d3748" text-anchor="middle" letter-spacing="0.1">mastercard</text>
+          </svg>
+          <!-- Apple Pay -->
+          <svg class="payment-icon-svg" viewBox="0 0 42 30" width="48" height="34">
+            <path d="M12.5 15.2c0-1.8 1.5-2.8 1.5-2.8-0.9-1.2-2.1-1.4-2.6-1.4-1.1-0.1-2.2 0.6-2.8 0.6-0.5 0-1.5-0.6-2.4-0.6-1.2 0-2.3 0.7-2.9 1.8-1.2 2.2-0.3 5.4 0.9 7.1 0.6 0.8 1.3 1.8 2.2 1.7 0.9-0.1 1.2-0.6 2.3-0.6 1 0 1.3 0.6 2.3 0.6 0.9 0 1.6-0.9 2.2-1.7 0.7-1 1-2 1-2.1 0 0-1.8-0.7-1.8-2.7zM10.9 9.8c0.5-0.6 0.8-1.4 0.7-2.2-0.7 0-1.6 0.5-2.1 1.1-0.4 0.5-0.8 1.3-0.7 2.1 0.8 0.1 1.6-0.4 2.1-1z" fill="#000000"/>
+            <text x="17" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" font-size="12" fill="#000000">Pay</text>
+          </svg>
+          <!-- Amex -->
+          <svg class="payment-icon-svg" viewBox="0 0 38 26" width="44" height="30">
+            <rect width="38" height="26" rx="3" fill="#007bc4"/>
+            <rect x="1" y="1" width="36" height="24" rx="2" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.8"/>
+            <text x="19" y="16.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="bold" font-size="8" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">AMEX</text>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bottom-footer">
+      <div class="bottom-container">
+        <div class="social-links">
+          <a href="#fb" class="social-link-btn" aria-label="Facebook">
+            <img src="assets/fb_icon.svg" alt="Facebook">
+          </a>
+          <a href="#twitter" class="social-link-btn" aria-label="Twitter">
+            <img src="assets/twitter.svg" alt="Twitter">
+          </a>
+          <a href="#insta" class="social-link-btn" aria-label="Instagram">
+            <img src="assets/insta.svg" alt="Instagram">
+          </a>
+          <a href="#yt" class="social-link-btn" aria-label="YouTube">
+            <img src="assets/yt.svg" alt="YouTube">
+          </a>
+        </div>
+        <div class="copyright">
+          <span>&copy; 2021 Abokichi.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="search-overlay" id="search-overlay">
+    <button class="close-search">&times;</button>
+    <div class="search-box">
+      <input type="text" placeholder="Search Abokichi..." id="search-input">
+      <div class="search-results-mock">
+        <p>Press Enter to search, or try: <em>OKAZU</em>, <em>Matcha</em>, <em>Miso Soup</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <img src="assets/check_circle_icon.svg" alt="Success" class="toast-icon">
+      <span class="toast-message">Item added to your shopping bag!</span>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
